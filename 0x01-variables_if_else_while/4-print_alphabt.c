@@ -11,7 +11,7 @@ int main(void)
 	char small = 'a';
 
 	/*Using an If statement nested in a While loop*/
-	while (small <='z')
+	while (small <= 'z')
 	{
 		/*need the if statement to run to check for the following letters q and e*/
 		if ((small != 'q') && (small != 'e'))

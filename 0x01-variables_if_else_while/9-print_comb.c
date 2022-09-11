@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int x ='0';
+	int x = '0';
 
 	/*Using an if statement nested within a while loop*/
 	while (x <= '9')

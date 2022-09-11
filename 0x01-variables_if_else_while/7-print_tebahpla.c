@@ -8,7 +8,7 @@
 int main(void)
 {
 	/*starting variable is z*/
-	char smallEnd ='z';
+	char smallEnd = 'z';
 
 	/*while loop used to decrease to a*/
 	while (smallEnd >= 'a')

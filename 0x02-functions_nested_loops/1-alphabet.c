@@ -7,10 +7,10 @@
 void print_alphabet(void)
 {
 	char lower;
-	
+
 	lower = 'a';
 
-	while(lower <= 'z')
+	while (lower <= 'z')
 	{
 		_putchar(lower);
 		lower++;

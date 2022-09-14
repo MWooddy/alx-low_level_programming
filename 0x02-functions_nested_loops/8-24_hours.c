@@ -26,12 +26,12 @@ void jack_bauer(void)
 	*min++;
 	*/
 
-	while (hours < 24)
+	while (hour < 24)
 	{
 		while (min < 60)
 		{
-			_putchar('0' + (hours / 10));
-			_putchar('0' + (hours % 10));
+			_putchar('0' + (hour / 10));
+			_putchar('0' + (hour % 10));
 			_putchar(':');
 			_putchar('0' + (min / 10));
 			_putchar('0' + (min % 10));
@@ -40,6 +40,6 @@ void jack_bauer(void)
 		}
 		/*Need to rest minutes and increase the hour*/
 		min = 0;
-		hours++;
+		hour++;
 	}
 }

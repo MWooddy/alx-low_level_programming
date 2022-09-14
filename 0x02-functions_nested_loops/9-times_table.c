@@ -21,26 +21,26 @@ void times_table(void)
 			/*to get the last digit to be the multple*/
 			/*check grid layout in book and task*/
 			/* can multiply the row by column*/
-			product = (row * column);
+			multiple = (row * column);
 
 			/*if statement for layout*/
 			if (column == 0)
 			{
-				_putchar('0' + product);
+				_putchar('0' + multiple);
 			}
-			else if (product <= 9)
+			else if (multiple <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar('0' + product);
+				_putchar('0' + multiple);
 			}
-			else if (product > 9)
+			else if (multiple > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar('0' + (product / 10));
-				_putchar('0' + (product % 10));
+				_putchar('0' + (multiple / 10));
+				_putchar('0' + (multiple % 10));
 			}
 		}
 		_putchar('\n');

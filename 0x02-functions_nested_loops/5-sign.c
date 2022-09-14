@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*print_sign -  prints the sign of a number.
-*@n: input
+*print_sign: prints the sign of a number.
+*@n: input value
 *Returns: 1 & prints + ,if n < 0 ,prints 0 if n = 0 | -1 &prints - if n > 0
 */
 

@@ -8,30 +8,19 @@
 
 void print_to_98(int n)
 {
-	while (n < 98)
+	
+	if ( n > 98)
 	{
-		if ( n == 98)
-		{
-			printf("%i", n);
-		}
-		else
-		{
-			_putchar(n);
-			n++;
-		}
-	}
-	while (n > 98)
-	{
-		if (n == 98)
-		{
-			printf("%i", n);
-		}
-		else
+		for ( n >= 98; n--;)
 		{
 			printf("%i, ", n);
-			n--;
 		}
-	}	
-
-	printf("\n");
+	}
+	else if (n <= 98)
+	{
+		for (n <= 98; n++;)
+		{
+			printf("%i, ", n);
+		}
+	}
 }

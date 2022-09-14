@@ -11,18 +11,14 @@ void print_to_98(int n)
 	
 	if ( n > 98)
 	{
-		int i;
-
-		for (int i = n; i >= 98; i--;)
+		for (int i = n; i >= 98; i--)
 		{
 			printf("%i, ", i);
 		}
 	}
 	else if (n <= 98)
 	{
-		int d;
-
-		for (int d = n; d <= 98; d++;)
+		for (int d = n; d <= 98; d++)
 		{
 			printf("%i, ", d);
 		}

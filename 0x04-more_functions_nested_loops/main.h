@@ -10,11 +10,34 @@
 * On error, -1 is returned, and errno is set appropriately.
 */
 int _putchar(char c);
-
+{
+	return (write(1, &c, 1));
+}
 /*
 *
 */
 int _isupper(int c);
+{
+	int upper[] = {'A','B','C','D','E','F','G','H','I','G','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+	int lower[] = {'a','b','c','d','e','f','g','h','i','g','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+
+	int arrayCheck = 0;
+
+	do{
+		if (c == upper[arrayCheck])
+		{
+			return (1);
+		}
+		else if (c == lower[arrayCheck])
+		{
+			return (0);
+		}
+		else
+		{
+			arrayCheck++;
+		}
+	}while (arrayCheck <= 25);
+}
 
 /*
 *

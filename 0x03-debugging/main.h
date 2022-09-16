@@ -12,24 +12,8 @@ void positive_or_negative(int i);
 * @c: third integer
 * Return: largest number
 */
-int largest_number(int a, int b, int c)
-{
-	 int largest;
-	 
-	if (a > b && a > c && b < c)
-	{
-	 	largest = a;
-	}
-	else if (b > a && b> c && a < c)
-	{
-		largest = b;
-	}
-	else
-	{
-		largest = c;
-	}
-	return (largest);
-}
+int largest_number(int a, int b, int c);
+
 
 
 

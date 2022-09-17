@@ -9,31 +9,27 @@
 
 int _isdigit(int c)
 {
-	int upper[] = {'A','B','C','D','E','F','G','H','I','G','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	int lower[] = {'a','b','c','d','e','f','g','h','i','g','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-	char d = '0';
-	int arrayCheck = 0;
+	int upper = 'A';
+	int lower = 'a';
+	int digit = '0';
 	int output;
 
-	do
+	 while(upper <= 'Z')
+	 {
+	 	if (c == upper || c == lower )
+		{
+			 output = 0;
+		}
+		upper++;
+		lower++;
+	}
+	while( digit <= '9')
 	{
-		if (c == upper[arrayCheck])
-		{
-			output = 0;
-		}
-		else if (c == lower[arrayCheck])
-		{
-			output = 0;
-		}
-		else if (c == d)
+		if(c == digit)
 		{
 			output = 1;
 		}
-		else
-		{
-			arrayCheck++;
-			d ++;
-		}
-	}while (arrayCheck <= 25);
+		digit++;
+	}
 	return (output);
 }

@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
-* main - start of code
-* Description - Write a program that prints the numbers
-*from 1 to 100 
+*main - start of code
+*Description - Write a program that prints the numbers
+*Returns - fizz buzz
+*from 1 to 100
 *But for multiples of three print Fizz
 *for the multiples of five print Buzz
 *multiples of both three and five print FizzBuzz

@@ -2,7 +2,7 @@
 
 /**
 * main - entry point
-* Description - finds and prints the largest prime factor of the number
+*@void: prints prime factor
 */
 
 int main(void)

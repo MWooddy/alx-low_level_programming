@@ -17,7 +17,7 @@ char *cap_string(char *sentance);
 
 char *leet(char *encode);
 
-char *rot13(char *);
+char *rot13(char *encode);
 
 void print_number(int n);
 

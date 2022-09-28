@@ -9,7 +9,7 @@ int check(char *s, int n, int i);
 */
 int is_palindrome(char *s)
 {
-	return (pd(s, _strlen_recursion(s) - 1, 0));
+	return (check(s, _strlen_recursion(s) - 1, 0));
 }
 
 /**

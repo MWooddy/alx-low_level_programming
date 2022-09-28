@@ -28,6 +28,9 @@ int is_palindrome(char *s);
 
 int wildcmp(char *s1, char *s2);
 
+int _strlen_recursion(char *s);
+
+int check(char *s, int n, int i);
 
 
 #endif

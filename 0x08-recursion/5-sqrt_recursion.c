@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 * find_root -find square root
 *@n:int
 *@root:int
-*Retun:  natural square root
+*Return:  natural square root
 */
 int find_root(int n, int root)
 {

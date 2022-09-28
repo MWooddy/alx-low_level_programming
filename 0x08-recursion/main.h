@@ -22,6 +22,8 @@ int find_root(int n, int root);
 
 int is_prime_number(int n);
 
+int prime_con(int n, int i);
+
 int is_palindrome(char *s);
 
 int wildcmp(char *s1, char *s2);

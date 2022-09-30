@@ -6,9 +6,10 @@
 bool isNumber(char *argvv);
 
 /**
-* is_num - iterate through each argv to test if it's a number
-* @argvv: a argv
-* Return: true only if entire string is a number, false if not
+* main - entry point
+* @argv: a argv
+*@argc: int
+* Return: 0 success, 1 error
 */
 int main(int argc, char *argv[])
 {
@@ -45,6 +46,7 @@ int main(int argc, char *argv[])
 bool isNumber(char *argvv)
 {
 	int index2 = 0;
+
 	for (index2 = 0; argvv[index2]; index2++)
 	{
 		if (!(argvv[index2] >= '0' && argvv[index2] <= '9'))

@@ -26,12 +26,20 @@ char *str_concat(char *s1, char *s2)
 		length1++, i++;
 	}
 	while (*(s2 + j))
-		{len2++, j++;}
+	{
+		len2++, j++;
+	}
+	
 	len2++;
+	
 	combine = malloc(sizeof(char) * (length1 + len2));
 	if (combine == NULL)
-		{return (NULL);}
+	{
+		return (NULL);
+	}
+	
 	i = 0, j = 0;
+	
 	while (i < length1)
 	{
 		*(combine + i) = *(s1 + i);

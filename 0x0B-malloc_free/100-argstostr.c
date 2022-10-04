@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 int _strlen(char *s);
+
 /**
 * argstostr - combines all the arguments
 * @ac: argc
@@ -11,31 +12,37 @@ int _strlen(char *s);
 */
 char *argstostr(int ac, char **av)
 {
-	char *s;
-	int length = 0, i, j, k = 0;
+	char *dest;
+	unsigned int size, i, j, k;
+
+	size = 0;
+	k = 0;
+
+	if (ac <= 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < (unsigned int)ac; i++)
 	{
-		length += _strlen(av[i]);
+		size += _strlen(av[i]);
 	}
-	length += (ac + 1);
-	s = malloc(length * sizeof(char));
-	if (s == NULL)
+	dest = (char *)malloc((size + 1) * sizeof(char));
+	if (dest == NULL)
 	{
-		free(s);
 		return (NULL);
 	}
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < (unsigned int)ac; i++)
 	{
-		for (j = 0; j < _strlen(av[i]); j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			s[k++] = av[i][j];
+			dest[k] = av[i][j];
+			k++;
 		}
-		s[k++] = '\n';
+		dest[k] = '\n';
+		k++;
 	}
-	return (s);
+	dest[k] = '\0';
+	return (dest);
 }
 /**
 * _strlen - returns the length of a string

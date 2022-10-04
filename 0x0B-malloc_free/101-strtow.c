@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_tab(char **tab);
-int findword(char *s);
-int wordlen(char *s);
-int word_count(char *s, int word);
-char **strtow(char *str);
 /**
 *strtow - splits a string into words
 *@str: char

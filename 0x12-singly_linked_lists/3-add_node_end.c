@@ -41,3 +41,18 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	return (newNode);
 }
+/**
+* _strlen - return length of a string
+* @str: string
+* Return: length
+*/
+unsigned int _strlen(const char *str)
+{
+	unsigned int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}

@@ -1,5 +1,6 @@
 #include "lists.h"
 
+unsigned int _strlen(const char *str);
 /**
 *add_node_end -a func that adds a new node at the end of a list
 * @head: head of the list

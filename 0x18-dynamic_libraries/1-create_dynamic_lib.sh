@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -fPIC -shared -Wall -Werror -Wextra -pedantic -o "lib${1:-all}.so" *.c
+gcc -fPIC -shared -Wall -Werror -Wextra -pedantic -o "libdynamic.so" *.c
